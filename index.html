@@ -20,24 +20,24 @@
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <label for="userName">Nome:</label>
-                    <input type="text" name="userName" required>
+                    <input type="text" id="userName" name="userName" required>
                     <br>
 
                     <label for="userAge">Idade:</label>
-                    <input type="number" name="userAge" min="12" max="100" required>
+                    <input type="number" id="userAge" name="userAge" min="12" max="100" required>
 
                     <label for="birthDate">Data de Nascimento:</label>
-                    <input type="date" name="birthDate">
+                    <input type="date" id="birthDate" name="birthDate">
                     <br>
                     <label for="userEmail">Email:</label>
-                    <input type="email" name="userEmail" required>
+                    <input type="email" id="userEmail" name="userEmail" required>
                     <br>
                     <label for="userPhoneNumber">Telefone:</label>
-                    <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + Somente os números">
+                    <input type="tel" id="userPhoneNumber" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + Somente os números">
                     <br>
 
                     <label for="userImage">Upload de foto:</label>
-                    <input type="file" accept="images/*" name="userImage">
+                    <input type="file" id="userImage" accept="images/*" name="userImage">
                     <br>
 
 
@@ -47,19 +47,19 @@
                     <legend>Perfil</legend>
                     <p>Gênero:</p>
 
-                    <input type="radio" name="userGender" value="Feminino">
-                    <label for="userGender">Feminino</label>
+                    <input type="radio" id="Feminino" name="userGender" value="Feminino">
+                    <label for="Feminino">Feminino</label>
 
-                    <input type="radio" name="userGender" value="Masculino">
-                    <label for="userGender">Masculino</label>
+                    <input type="radio" id="Masculino" name="userGender" value="Masculino">
+                    <label for="Masculino">Masculino</label>
 
-                    <input type="radio" name="userGender" value="notInformed">
-                    <label for="userGender">Prefiro não informar</label>
+                    <input type="radio" id="PrefiroNaoInformar" name="userGender" value="notInformed">
+                    <label for="PrefiroNaoInformar">Prefiro não informar</label>
 
                     <br>
 
                     <label for="maritalState">Estado Civil:</label>
-                    <select name="maritalState">
+                    <select id="maritalState" name="maritalState">
                         <option value="notInformed">Selecione...</option>
                         <option value="solteiro">Solteiro(a)</option>
                         <option value="casado">Casado(a)</option>
@@ -68,7 +68,7 @@
                     </select>
                     <br>
                     <label for="userState">Estado:</label>
-                    <select name="userState" required>
+                    <select id="userState" name="userState" required>
                         <option value="acre">Acre</option>
                         <option value="alagoas">Alagoas</option>
                         <option value="amapa">Amapá</option>
@@ -104,6 +104,23 @@
 
                 </fieldset>
 
+                <fieldset>
+                    <legend>Hábitos:</legend>
+                    <p>Redes Sociais:</p>
+
+                        <input type="checkbox" id="instagram" name="socialMedia" value="Instagram">
+                        <label for="instagram">Instagram</label>
+                        <br>
+                        <input type="checkbox" id="facebook" name="socialMedia" value="Facebook">
+                        <label for="facebook">Facebook</label>
+                        <br>
+                        <input type="checkbox" id="x" name="socialMedia" value="X">
+                        <label for="x">X (Twitter)</label>
+                        <br>
+                        <input type="checkbox" id="linkedin" name="socialMedia" value="LinkedIn">
+                        <label for="linkedin">LinkedIn</label>
+                </fieldset>
+
                 <button type="submit">Enviar</button>
             </form>
 
@@ -111,4 +128,4 @@
     </main>
 </body>
 
-</html>
+</html
