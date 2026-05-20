@@ -49,10 +49,10 @@
 
                     <input type="radio" id="Feminino" name="userGender" value="Feminino">
                     <label for="Feminino">Feminino</label>
-
+                    <br>
                     <input type="radio" id="Masculino" name="userGender" value="Masculino">
                     <label for="Masculino">Masculino</label>
-
+                    <br>
                     <input type="radio" id="PrefiroNaoInformar" name="userGender" value="notInformed">
                     <label for="PrefiroNaoInformar">Prefiro não informar</label>
 
@@ -133,10 +133,30 @@
                         
                         <label for="userColors">Cor Favorita:</label>
                         <input type="color" id="userColors" name="userFavoriteColors">
+                </fieldset>
 
+                <fieldset>
+                    <legend>Opinião</legend>
+                        <p>O que você achou da experiência?</p>
 
+                        <input type="radio" id="otimo" name="userOpinion" value="otimo">
+                        <label for="otimo">Ótimo</label>
+                        <br>
+                        <input type="radio" id="bom" name="userOpinion" value="bom">
+                        <label for="bom">Bom</label>
+                        <br>
+                        <input type="radio" id="regular" name="userOpinion" value="regular">
+                        <label for="regular">Regular</label>
+                        <br>
+                        <input type="radio" id="ruim" name="userOpinion" value="ruim">
+                        <label for="ruim">Ruim</label>
+                        <br>
+
+                        <label for="userComments">Deixe seu comentário:</label>
+                        <textarea id="userComments" name="userComments" placeholder="Deixe seu comentário aqui..."></textarea>
 
                 </fieldset>
+
 
                 <button type="submit">Enviar</button>
             </form>
