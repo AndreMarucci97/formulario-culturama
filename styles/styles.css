@@ -1,2 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Work Sans', sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+.message__title{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 7px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+label { 
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="color"] {
+    width: 30px;
+    padding: 0 3px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+button {
+    width:100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+}
+
+button[type="submit"]:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button[type="reset"]:hover {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
