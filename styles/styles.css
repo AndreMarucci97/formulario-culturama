@@ -29,12 +29,25 @@ img {
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+.message__title{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
 }
 
 form {
     background-color: #fff;
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 fieldset {
@@ -48,6 +61,11 @@ legend {
     font-weight: bold;
     font-size: 18px;
     padding: 0 7px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 label { 
@@ -76,4 +94,34 @@ input[type="checkbox"] {
 input[type="color"] {
     width: 30px;
     padding: 0 3px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+button {
+    width:100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+}
+
+button[type="submit"]:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button[type="reset"]:hover {
+    background-color: #f44336;
+    color: white;
+    border: none;
 }
